@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мировые часы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мировые часы</h1>
+        <div class="timezone-grid">
+            <div class="timezone-card">
+                <h2>Лос-Анджелес</h2>
+                <div class="clock-container">
+                    <canvas id="la-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="la-time" class="time-input">
+                        <div class="timezone-label">PST/PDT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Нью-Йорк</h2>
+                <div class="clock-container">
+                    <canvas id="ny-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="ny-time" class="time-input">
+                        <div class="timezone-label">EST/EDT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Лондон</h2>
+                <div class="clock-container">
+                    <canvas id="london-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="london-time" class="time-input">
+                        <div class="timezone-label">GMT/BST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Париж</h2>
+                <div class="clock-container">
+                    <canvas id="paris-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="paris-time" class="time-input">
+                        <div class="timezone-label">CET/CEST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Москва</h2>
+                <div class="clock-container">
+                    <canvas id="moscow-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="moscow-time" class="time-input">
+                        <div class="timezone-label">MSK</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Дубай</h2>
+                <div class="clock-container">
+                    <canvas id="dubai-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="dubai-time" class="time-input">
+                        <div class="timezone-label">GST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Токио</h2>
+                <div class="clock-container">
+                    <canvas id="tokyo-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="tokyo-time" class="time-input">
+                        <div class="timezone-label">JST</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timezone-card">
+                <h2>Сидней</h2>
+                <div class="clock-container">
+                    <canvas id="sydney-clock" class="clock-face" width="150" height="150"></canvas>
+                    <div class="digital-time">
+                        <input type="time" id="sydney-time" class="time-input">
+                        <div class="timezone-label">AEST/AEDT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

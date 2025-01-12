@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.timezone-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timezone-card {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    transition: transform 0.3s ease;
+}
+
+.timezone-card:hover {
+    transform: translateY(-5px);
+}
+
+.timezone-card h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.clock-face {
+    background: #333;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.digital-time {
+    text-align: center;
+    width: 100%;
+}
+
+.time-input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.4em;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    width: 110px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.time-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.timezone-label {
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .timezone-grid {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    
+    .timezone-card {
+        width: 160px;
+    }
+} 
